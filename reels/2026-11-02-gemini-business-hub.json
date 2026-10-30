@@ -1,0 +1,118 @@
+{
+ "creator": "Amit Patel",
+ "max_seconds": 40,
+ "music": "auto",
+ "lines": [
+  {
+   "text": "Google ne Gemini mein chhote business ke liye ek alag hub daal diya hai. Ye aapka roz ka kaam halka kar sakta hai.",
+   "wav": "l1.wav"
+  },
+  {
+   "text": "Pehli baat, brand. Website, colors aur fonts ek baar daalo. Phir har post ek jaisi banegi, roz naya design nahi sochna.",
+   "wav": "l2.wav"
+  },
+  {
+   "text": "Doosri baat, paisa. Apni sheets ka summary mangwao aur sawal pakdo. Final hisaab apne CA ya books se hi milana.",
+   "wav": "l3.wav"
+  },
+  {
+   "text": "Teesri baat, apps connect karo, taaki kaam khud chalta rahe. Zyada mehnat nahi, ek achha system banao. Ye reel save kar lo.",
+   "wav": "l4.wav"
+  }
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "pills": [
+    "Google",
+    "Gemini"
+   ],
+   "icon": "sparkles",
+   "headline": "*Business hub* ab Gemini mein"
+  },
+  {
+   "type": "phone",
+   "cue": "Pehli baat",
+   "chip": "POINT 1",
+   "icon": "palette",
+   "title": "Brand ek baar set",
+   "cards": [
+    {
+     "icon": "store",
+     "text": "Website aur fonts daale",
+     "meta": "ek baar"
+    },
+    {
+     "icon": "sparkles",
+     "text": "Har post ek jaisi",
+     "meta": "on-brand"
+    }
+   ]
+  },
+  {
+   "type": "compare",
+   "cue": "har post ek",
+   "title": "Design ka tareeka",
+   "left": {
+    "title": "Roz",
+    "items": [
+     "Naya design",
+     "Naya time"
+    ]
+   },
+   "right": {
+    "title": "Ek baar",
+    "items": [
+     "Brand set",
+     "Sab same"
+    ]
+   }
+  },
+  {
+   "type": "big",
+   "cue": "Doosri baat",
+   "chip": "POINT 2",
+   "icon": "wallet",
+   "text": "Paisa ka *summary*",
+   "sub": "sheets se sawal pakdo"
+  },
+  {
+   "type": "approval",
+   "cue": "Final hisaab",
+   "icon": "shield-check",
+   "title": "Final check",
+   "question": "CA se milaya?",
+   "yes": "Haan",
+   "no": "Abhi nahi",
+   "done": "Books se confirm"
+  },
+  {
+   "type": "flow",
+   "cue": "apps connect karo",
+   "chip": "POINT 3",
+   "title": "Kaam khud chale",
+   "nodes": [
+    {
+     "icon": "mail",
+     "label": "Apps"
+    },
+    {
+     "icon": "zap",
+     "label": "Gemini"
+    },
+    {
+     "icon": "check",
+     "label": "Kaam"
+    }
+   ],
+   "sub": "mehnat nahi, system"
+  },
+  {
+   "type": "cta",
+   "cue": "reel save kar",
+   "icon": "bookmark",
+   "text": "Ye reel *save* kar lo",
+   "sub": "Amit Patel"
+  }
+ ]
+}
