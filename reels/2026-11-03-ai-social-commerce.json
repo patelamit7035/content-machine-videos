@@ -1,0 +1,26 @@
+{
+ "creator": "Amit Patel",
+ "max_seconds": 40,
+ "music": "auto",
+ "lines": [
+  {"text": "Instagram pe bechne ke liye lakhon followers chahiye? Nahi. Ek system chahiye.", "wav": "l1.wav"},
+  {"text": "Live2.ai ne AI social commerce ke liye 130 crore rupaye raise kiye. Bade paise ab social shopping mein lag rahe hain.", "wav": "l2.wav"},
+  {"text": "Pehla: ek product, ek saaf reel. Doosra: common sawaalon ke jawab pehle se likh ke rakho. Teesra: order ka ek hi rasta rakho, WhatsApp.", "wav": "l3.wav"},
+  {"text": "Followers baad mein badhte hain, system pehle banta hai. Save kar lo, aur apne dost ko bhejo.", "wav": "l4.wav"}
+ ],
+ "scenes": [
+  {"type": "hook", "pills": ["Instagram", "Selling"], "icon": "store", "headline": "Bechne ke liye *system* chahiye"},
+  {"type": "stat", "cue": "Live2.ai ne", "icon": "trending-up", "value": 130, "prefix": "₹", "suffix": " Cr", "label": "Live2.ai ka funding round"},
+  {"type": "big", "cue": "Bade paise", "icon": "shopping-bag", "text": "*Social shopping* mein paisa", "sub": "AI social commerce"},
+  {"type": "phone", "cue": "Pehla", "chip": "POINT 1", "icon": "smartphone", "title": "Ek product, ek reel",
+   "cards": [{"icon": "video", "text": "Ek saaf reel", "meta": "ek product"}]},
+  {"type": "checklist", "cue": "Doosra", "chip": "POINT 2", "icon": "list-checks", "title": "Pehle se likhe jawab",
+   "items": ["Price kitna hai", "Delivery kab", "Kaise order karein"]},
+  {"type": "flow", "cue": "Teesra", "chip": "POINT 3", "title": "Order ka ek rasta",
+   "nodes": [{"icon": "video", "label": "Reel"}, {"icon": "message-circle", "label": "WhatsApp"}, {"icon": "indian-rupee", "label": "Order"}], "sub": "ek hi rasta"},
+  {"type": "compare", "cue": "Followers baad", "title": "Kya pehle",
+   "left": {"title": "Pehle", "items": ["Followers", "Phir system"]},
+   "right": {"title": "Sahi", "items": ["System", "Phir followers"]}},
+  {"type": "cta", "cue": "Save kar lo", "icon": "bookmark", "text": "*Save* kar lo", "sub": "dost ko bhejo"}
+ ]
+}
