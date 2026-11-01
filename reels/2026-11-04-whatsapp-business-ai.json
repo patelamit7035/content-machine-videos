@@ -1,0 +1,26 @@
+{
+ "creator": "Amit Patel",
+ "max_seconds": 40,
+ "music": "auto",
+ "lines": [
+  {"text": "Diwali aa raha hai, aur aap abhi bhi har WhatsApp message ka reply khud kar rahe ho?", "wav": "l1.wav"},
+  {"text": "Pehli baat. WhatsApp ne India mein Business AI launch kiya hai. Ye raat ko bhi customer ke sawaal ka jawab de sakta hai.", "wav": "l2.wav"},
+  {"text": "Doosri baat. Ye leads capture karta hai, appointment book karta hai, aur Indian bhashaon mein baat karta hai. Setup Tools tab mein hai, aur aap ise kabhi bhi band kar sakte ho.", "wav": "l3.wav"},
+  {"text": "Teesri baat. Pehle apne roz ke sawaal likho: price, timing, delivery. Phir AI ko wahi sikhao. Ek system, har jawab. Ye video save kar lo.", "wav": "l4.wav"}
+ ],
+ "scenes": [
+  {"type": "hook", "pills": ["WhatsApp", "Diwali"], "icon": "message-circle", "headline": "Har message ka reply *khud* kar rahe ho?"},
+  {"type": "big", "cue": "Pehli baat", "chip": "POINT 1", "icon": "message-circle", "text": "*Business AI* on WhatsApp", "sub": "India mein launch"},
+  {"type": "phone", "cue": "raat ko bhi", "icon": "smartphone", "title": "Raat ko bhi jawab",
+   "cards": [{"icon": "message-circle", "text": "Customer ka sawaal", "meta": "raat 11 baje"}, {"icon": "bot", "text": "AI ka jawab", "meta": "turant"}]},
+  {"type": "checklist", "cue": "Doosri baat", "chip": "POINT 2", "icon": "list-checks", "title": "AI kya karta hai",
+   "items": ["Leads capture", "Appointment book", "Indian bhashaon mein"]},
+  {"type": "approval", "cue": "Tools tab", "icon": "shield-check", "title": "Control aapke paas", "question": "Business AI chalu rakhein?", "yes": "Chalu", "no": "Band", "done": "Kabhi bhi badlo"},
+  {"type": "flow", "cue": "Teesri baat", "chip": "POINT 3", "title": "Ek system",
+   "nodes": [{"icon": "list-checks", "label": "Sawaal likho"}, {"icon": "brain", "label": "AI sikhao"}, {"icon": "message-circle", "label": "Jawab"}], "sub": "price, timing, delivery"},
+  {"type": "compare", "cue": "Ek system", "title": "Diwali rush",
+   "left": {"title": "Pehle", "items": ["Har reply khud", "Raat ko jaagna"]},
+   "right": {"title": "Ab", "items": ["Ek system", "AI jawab de"]}},
+  {"type": "cta", "cue": "save kar lo", "icon": "bookmark", "text": "*Save* kar lo", "sub": "Diwali se pehle"}
+ ]
+}
