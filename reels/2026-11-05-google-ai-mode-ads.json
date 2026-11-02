@@ -1,0 +1,25 @@
+{
+ "creator": "Amit Patel",
+ "max_seconds": 40,
+ "music": "auto",
+ "lines": [
+  {"text": "Customer ab Google pe search nahi karta, AI se poochta hai. Us jawab mein aapka naam aata hai?", "wav": "/tmp/claude-0/w/l1.wav"},
+  {"text": "Pehli baat. Google ne 28 October ko India samet das deshon mein AI Mode ke andar ads badha diye. Ye ads Sponsored likhe hote hain.", "wav": "/tmp/claude-0/w/l2.wav"},
+  {"text": "Doosri baat. Search aur Shopping campaigns wale pehle se eligible hain. Lekin ad ke bina bhi, AI wahi dikhata hai jo internet pe saaf likha ho.", "wav": "/tmp/claude-0/w/l3.wav"},
+  {"text": "Teesri baat. Apna naam, address, timing aur roz ke sawaal ek jagah saaf likho. Ek system, har jagah wahi jawab. Ye video save kar lo.", "wav": "/tmp/claude-0/w/l4.wav"}
+ ],
+ "scenes": [
+  {"type": "hook", "pills": ["Google"], "icon": "search", "headline": "AI mein *naam*?"},
+  {"type": "big", "cue": "Pehli baat", "chip": "POINT 1", "icon": "sparkles", "text": "AI Mode mein *ads*", "sub": "India samet 10 desh"},
+  {"type": "phone", "cue": "Sponsored likhe", "icon": "smartphone", "title": "AI ka jawab",
+   "cards": [{"icon": "bot", "text": "Customer ka sawaal", "meta": "AI Mode"}, {"icon": "store", "text": "Sponsored", "meta": "ad par label"}]},
+  {"type": "checklist", "cue": "Doosri baat", "chip": "POINT 2", "icon": "list-checks", "title": "Pehle se eligible",
+   "items": ["Search campaigns", "Shopping campaigns"]},
+  {"type": "compare", "cue": "ad ke bina", "title": "AI kya dikhata hai",
+   "left": {"title": "Adhura", "items": ["Purani details", "Alag jawab"]},
+   "right": {"title": "Saaf", "items": ["Sahi details", "Ek jawab"]}},
+  {"type": "flow", "cue": "Teesri baat", "chip": "POINT 3", "title": "Ek system",
+   "nodes": [{"icon": "store", "label": "Naam, address"}, {"icon": "clock", "label": "Timing"}, {"icon": "message-circle", "label": "Sawaal"}], "sub": "ek jagah saaf likho"},
+  {"type": "cta", "cue": "save kar lo", "icon": "bookmark", "text": "*Save* kar lo", "sub": "AI search ke liye"}
+ ]
+}
