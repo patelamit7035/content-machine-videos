@@ -1,0 +1,26 @@
+{
+ "creator": "Amit Patel",
+ "max_seconds": 40,
+ "music": "auto",
+ "lines": [
+  {"text": "Aapki poori dukaan kisi aur ke platform pe hai? Festive season se pehle wahi platform rules badal sakta hai.", "wav": "/tmp/claude-0/w/l1.wav"},
+  {"text": "Pehli baat. Amazon ne 17 August se seller cancellation fee ka tareeka badla. Ab ye order value ke hisaab se lagta hai. Rules platform ke, marzi platform ki.", "wav": "/tmp/claude-0/w/l2.wav"},
+  {"text": "Doosri baat. Marketplace pe customer milte hain, par wo platform ka hota hai, aapka nahi. Unka sampark aur order history apne paas rakho.", "wav": "/tmp/claude-0/w/l3.wav"},
+  {"text": "Teesri baat. Website ya WhatsApp catalogue jaisa apna channel banao, jahan repeat customer seedha order kare. Ek baar system bane, toh ye video save kar lo.", "wav": "/tmp/claude-0/w/l4.wav"}
+ ],
+ "scenes": [
+  {"type": "hook", "pills": ["Amazon"], "icon": "store", "headline": "Dukaan *kiski*?"},
+  {"type": "big", "cue": "Pehli baat", "chip": "POINT 1", "icon": "shield-check", "text": "Rules *badal* gaye", "sub": "17 August se"},
+  {"type": "checklist", "cue": "order value", "icon": "list-checks", "title": "Seller cancellation fee", "items": ["Order value ke hisaab se", "Platform ne tay kiya"]},
+  {"type": "approval", "cue": "Rules platform ke", "icon": "shield-check", "title": "Rules kiske?", "question": "Fee badalne se pehle poochha?", "yes": "Haan", "no": "Nahi", "done": "Platform ki marzi"},
+  {"type": "compare", "cue": "Doosri baat", "chip": "POINT 2", "title": "Customer kiska?",
+   "left": {"title": "Sirf marketplace", "items": ["Platform ka customer", "Platform ke rules"]},
+   "right": {"title": "Apna channel", "items": ["Aapka customer", "Aapke rules"]}},
+  {"type": "phone", "cue": "Unka sampark", "icon": "smartphone", "title": "Apne paas rakho",
+   "cards": [{"icon": "users", "text": "Customer ka sampark", "meta": "apni list"}, {"icon": "clock", "text": "Order history", "meta": "ek jagah"}]},
+  {"type": "flow", "cue": "Teesri baat", "chip": "POINT 3", "title": "Apna channel",
+   "nodes": [{"icon": "store", "label": "Website"}, {"icon": "message-circle", "label": "WhatsApp"}, {"icon": "rocket", "label": "Repeat order"}], "sub": "ek baar system banao"},
+  {"type": "big", "cue": "jahan repeat", "icon": "target", "text": "Customer *seedha* aapka", "sub": "repeat order"},
+  {"type": "cta", "cue": "save kar lo", "icon": "bookmark", "text": "*Save* kar lo", "sub": "apni dukaan ke liye"}
+ ]
+}
