@@ -1,0 +1,26 @@
+{
+ "creator": "Amit Patel",
+ "max_seconds": 40,
+ "music": "auto",
+ "lines": [
+  {"text": "Instagram ab 90 minute tak ki lambi video ka test kar raha hai. Sirf Reels banate ho, toh ye suno.", "wav": "/tmp/claude-0/w/l1.wav"},
+  {"text": "Pehli baat. Ye abhi sirf test hai, Brazil aur America mein. India ki koi date nahi aayi hai.", "wav": "/tmp/claude-0/w/l2.wav"},
+  {"text": "Doosri baat. Reel ab discovery ka darwaza hai, aur lambi video bharosa banane ki jagah. Dono ek doosre se jude honge.", "wav": "/tmp/claude-0/w/l3.wav"},
+  {"text": "Teesri baat. Ek hi idea se ek lambi video banao, aur usse kai Reels nikalo. Ek system, baar baar nayi mehnat nahi. Ye video save kar lo.", "wav": "/tmp/claude-0/w/l4.wav"}
+ ],
+ "scenes": [
+  {"type": "hook", "pills": ["Instagram"], "icon": "video", "headline": "Sirf *Reels* kaafi hai?"},
+  {"type": "stat", "cue": "Sirf Reels banate", "icon": "clock", "value": 90, "prefix": "", "suffix": " min", "label": "Instagram ki nayi lambi video"},
+  {"type": "big", "cue": "Pehli baat", "chip": "POINT 1", "icon": "target", "text": "Abhi sirf *test*", "sub": "India ki date nahi"},
+  {"type": "phone", "cue": "Brazil aur America", "icon": "smartphone", "title": "Features test",
+   "cards": [{"icon": "video", "text": "Brazil, America", "meta": "test chal raha hai"}, {"icon": "clock", "text": "India: date nahi", "meta": "abhi announce nahi"}]},
+  {"type": "flow", "cue": "Doosri baat", "chip": "POINT 2", "title": "Reel se bharosa tak",
+   "nodes": [{"icon": "video", "label": "Reel"}, {"icon": "users", "label": "Lambi video"}, {"icon": "shield-check", "label": "Bharosa"}], "sub": "dono jude honge"},
+  {"type": "checklist", "cue": "Teesri baat", "chip": "POINT 3", "icon": "list-checks", "title": "Ek idea, kai content",
+   "items": ["Ek lambi video", "Usse kai Reels", "Ek system"]},
+  {"type": "compare", "cue": "baar baar", "title": "Mehnat ka tareeka",
+   "left": {"title": "Purana", "items": ["Roz naya idea", "Roz naya kaam"]},
+   "right": {"title": "System", "items": ["Ek idea", "Kai Reels"]}},
+  {"type": "cta", "cue": "save kar lo", "icon": "bookmark", "text": "*Save* kar lo", "sub": "baad mein kaam aayega"}
+ ]
+}
