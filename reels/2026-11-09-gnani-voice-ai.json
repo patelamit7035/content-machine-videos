@@ -1,0 +1,137 @@
+{
+ "creator": "Amit Patel",
+ "max_seconds": 40,
+ "music": "auto",
+ "lines": [
+  {
+   "text": "Aapke customers ki phone calls mein kitna kaam chhupa hai, kabhi socha hai? Ab ek Indian AI Hinglish calls sun ke khud likh deta hai.",
+   "wav": "/tmp/claude-0/w/l1.wav"
+  },
+  {
+   "text": "Pehli baat: Gnani AI ne 28 October ko Prisma v3.0 launch kiya. Ye Indian phone call audio pe train hua hai, aur nau Indian bhashayein aur English, mix karke bhi samajhta hai.",
+   "wav": "/tmp/claude-0/w/l2.wav"
+  },
+  {
+   "text": "Doosri baat: call ka transcript apne aap ban jaata hai. Us se follow-up ki list nikalna asaan hai. Har call dobara sunna nahi padta, system notes bana deta hai.",
+   "wav": "/tmp/claude-0/w/l3.wav"
+  },
+  {
+   "text": "Teesri baat: shuru chhote se karo. Ek hafte ki calls ka transcript uthao, aur dekho kaunse sawal baar baar aate hain. Wahi aapka agla system hai. Ye reel save kar lo.",
+   "wav": "/tmp/claude-0/w/l4.wav"
+  }
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "pills": [
+    "Gnani AI"
+   ],
+   "icon": "phone",
+   "headline": "Calls se *notes*"
+  },
+  {
+   "type": "phone",
+   "cue": "Ab ek Indian",
+   "icon": "smartphone",
+   "title": "Hinglish call",
+   "cards": [
+    {
+     "icon": "phone",
+     "text": "Customer ki call",
+     "meta": "Hinglish mein"
+    },
+    {
+     "icon": "list-checks",
+     "text": "AI ne likh diya",
+     "meta": "khud se"
+    }
+   ]
+  },
+  {
+   "type": "big",
+   "cue": "Pehli baat",
+   "chip": "POINT 1",
+   "icon": "phone",
+   "text": "Indian calls pe *train*",
+   "sub": "Prisma v3.0"
+  },
+  {
+   "type": "checklist",
+   "cue": "Ye Indian phone",
+   "icon": "list-checks",
+   "title": "Prisma v3.0",
+   "items": [
+    "Phone call audio pe train",
+    "Hinglish mix samajhta hai"
+   ]
+  },
+  {
+   "type": "stat",
+   "cue": "nau Indian",
+   "icon": "message-circle",
+   "value": 9,
+   "prefix": "",
+   "suffix": "",
+   "label": "Indian bhashayein + English"
+  },
+  {
+   "type": "flow",
+   "cue": "Doosri baat",
+   "chip": "POINT 2",
+   "title": "Call se notes tak",
+   "nodes": [
+    {
+     "icon": "phone",
+     "label": "Call"
+    },
+    {
+     "icon": "list-checks",
+     "label": "Transcript"
+    },
+    {
+     "icon": "bell",
+     "label": "Follow-up"
+    }
+   ],
+   "sub": "system khud banata hai"
+  },
+  {
+   "type": "compare",
+   "cue": "Har call dobara",
+   "title": "Calls ka kaam",
+   "left": {
+    "title": "Purana",
+    "items": [
+     "Call dobara suno",
+     "Haath se notes"
+    ]
+   },
+   "right": {
+    "title": "System",
+    "items": [
+     "Transcript ready",
+     "Notes apne aap"
+    ]
+   }
+  },
+  {
+   "type": "checklist",
+   "cue": "Teesri baat",
+   "chip": "POINT 3",
+   "icon": "list-checks",
+   "title": "Chhote se shuru",
+   "items": [
+    "Ek hafte ki calls",
+    "Transcript nikalo",
+    "Baar baar ke sawal"
+   ]
+  },
+  {
+   "type": "cta",
+   "cue": "Wahi aapka agla",
+   "icon": "bookmark",
+   "text": "*Save* kar lo",
+   "sub": "baad mein kaam aayega"
+  }
+ ]
+}
