@@ -1,0 +1,16 @@
+{"creator":"Amit Patel","max_seconds":40,"music":"auto",
+"lines":[
+{"text":"Aapki iCloud mail aur calendar ab ChatGPT khud dekh sakta hai. iPhone wale, ye suno.","wav":"/tmp/claude-0/w/l1.wav"},
+{"text":"Pehli baat: OpenAI ne 27 October ko iCloud Mail aur Calendar plugin diye. ChatGPT mail dhoondh aur padh sakta hai, aur jawab ka draft bhi bana deta hai.","wav":"/tmp/claude-0/w/l2.wav"},
+{"text":"Doosri baat: calendar mein khaali slot dhoondhna, naya appointment daalna, purana badalna, ye sab bol ke ho sakta hai. ChatGPT kuch karne se pehle aapse approval maang sakta hai.","wav":"/tmp/claude-0/w/l3.wav"},
+{"text":"Teesri baat: shuru ek roz ke kaam se karo, jaise subah ka inbox summary. Pehle draft padho, phir bhejo. Ye reel save kar lo.","wav":"/tmp/claude-0/w/l4.wav"}],
+"scenes":[
+{"type":"hook","pills":["iCloud"],"icon":"mail","headline":"Inbox ka *kaam*"},
+{"type":"phone","cue":"iPhone wale","icon":"smartphone","title":"ChatGPT + iCloud","cards":[{"icon":"mail","text":"Inbox padha","meta":"mail"},{"icon":"calendar","text":"Schedule dekha","meta":"calendar"}]},
+{"type":"big","cue":"Pehli baat","chip":"POINT 1","icon":"calendar","text":"27 *October* ko aaya","sub":"iCloud Mail + Calendar plugin"},
+{"type":"checklist","cue":"mail dhoondh","icon":"mail","title":"Mail par kaam","items":["Mail dhoondhna","Padhna","Jawab ka draft"]},
+{"type":"flow","cue":"Doosri baat","chip":"POINT 2","title":"Calendar ka kaam","nodes":[{"icon":"calendar","label":"Khaali slot"},{"icon":"clock","label":"Naya time"},{"icon":"bell","label":"Appointment"}],"sub":"bol ke ho jaata hai"},
+{"type":"approval","cue":"ChatGPT kuch karne","icon":"shield-check","title":"Aapka control","question":"Ye appointment daalun?","yes":"Haan","no":"Nahi","done":"Approval ke baad"},
+{"type":"compare","cue":"Teesri baat","chip":"POINT 3","title":"Shuruaat","left":{"title":"Galat","items":["Sab ek saath","Bina padhe"]},"right":{"title":"Sahi","items":["Ek roz ka kaam","Draft padho"]}},
+{"type":"big","cue":"Pehle draft padho","icon":"sparkles","text":"Pehle *draft* padho","sub":"phir bhejo"},
+{"type":"cta","cue":"Ye reel save","icon":"bookmark","text":"Reel *save* kar lo","sub":"Amit Patel"}]}
