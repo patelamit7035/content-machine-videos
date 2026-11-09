@@ -1,0 +1,21 @@
+{
+  "creator": "Amit Patel",
+  "max_seconds": 40,
+  "music": "auto",
+  "lines": [
+    {"text": "Claude banane wali Anthropic ne 6 mahine mein lagbhag 16 billion dollar ka revenue dikhaya. Ek saal pehle ye 1 billion ke aas-paas tha.", "wav": "/tmp/claude-0/w/l1.wav"},
+    {"text": "Pehli baat: ye revenue hai, profit nahi. Aur abhi sirf IPO filing hui hai, company listed nahi hai. Headline se zyada, matlab samjho.", "wav": "/tmp/claude-0/w/l2.wav"},
+    {"text": "Doosri baat: business AI pe tab paisa lagata hai, jab wo ek repeat kaam poora kar de. Reply, hisaab, follow-up. Teesri baat: sab kuch ek saath mat badlo. Apna ek repeat kaam chuno, aur usse ek system bana do.", "wav": "/tmp/claude-0/w/l3.wav"},
+    {"text": "AI ki daud mein hustle nahi, system jeetta hai. Aisi practical baatein roz chahiye, toh follow karo aur ye reel save karo.", "wav": "/tmp/claude-0/w/l4.wav"}
+  ],
+  "scenes": [
+    {"type": "hook", "pills": ["Anthropic", "Claude"], "icon": "bot", "headline": "6 mahine, *16 billion* dollar"},
+    {"type": "stat", "cue": "Ek saal pehle", "icon": "trending-up", "prefix": "$", "value": 16.3, "suffix": " bn", "label": "H1 2026 revenue, IPO filing"},
+    {"type": "big", "cue": "Pehli baat", "icon": "chart-line", "text": "Revenue, *profit nahi*", "sub": "Abhi sirf IPO filing"},
+    {"type": "compare", "cue": "Headline se zyada", "title": "Headline vs matlab", "left": {"title": "Sirf headline", "items": ["Bada number", "Josh"]}, "right": {"title": "Matlab samjho", "items": ["Revenue, profit nahi", "Abhi listed nahi"]}},
+    {"type": "checklist", "cue": "Doosri baat", "chip": "POINT 2", "icon": "list-checks", "title": "Repeat kaam", "items": ["Reply", "Hisaab", "Follow-up"]},
+    {"type": "flow", "cue": "Teesri baat", "title": "Ek kaam, ek system", "nodes": [{"icon": "target", "label": "Ek kaam"}, {"icon": "zap", "label": "System"}, {"icon": "rocket", "label": "Roz chale"}], "sub": "Sab kuch ek saath nahi"},
+    {"type": "big", "cue": "hustle nahi", "icon": "moon-star", "text": "Hustle nahi, *system*", "sub": "Practical baatein roz"},
+    {"type": "cta", "cue": "follow karo", "icon": "bookmark", "text": "Follow karo, *save* karo", "sub": "Amit Patel"}
+  ]
+}
