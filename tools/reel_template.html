@@ -192,7 +192,7 @@ function render(t){
     if(on){const s=1+0.25*Math.max(0,1-(p-e.dataset.tick)/0.2);e.style.transform=`scale(${s})`}});
   root.querySelectorAll('[data-grow]').forEach(e=>{e.style.width=(100*eo((p-e.dataset.grow)/0.4))+'%'});
   root.querySelectorAll('[data-count]').forEach(e=>{const v=+e.dataset.count;const q=eo((p-0.1)/1.2);
-    e.textContent=e.dataset.pre+Math.round(v*q).toLocaleString('en-IN')+e.dataset.suf;});
+    const dc=(e.dataset.count.split('.')[1]||'').length;e.textContent=e.dataset.pre+(dc?(v*q).toFixed(dc):Math.round(v*q).toLocaleString('en-IN'))+e.dataset.suf;});
   root.querySelectorAll('[data-press]').forEach(e=>{e.classList.toggle('press',p>=+e.dataset.press)});
   root.querySelectorAll('[data-cursor]').forEach(e=>{const tp=+e.dataset.cursor;const q=eo((p-(tp-0.8))/0.7);
     const btn=root.querySelector('.btn.yes');const card=e.parentElement;

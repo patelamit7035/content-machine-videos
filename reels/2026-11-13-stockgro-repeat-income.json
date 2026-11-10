@@ -1,0 +1,21 @@
+{
+  "creator": "Amit Patel",
+  "max_seconds": 40,
+  "music": "auto",
+  "lines": [
+    {"text": "Ek Indian startup ka profit ek saal mein 3.3 guna ho gaya, aur Inc42 ke mutabik uski kamaai ka 99.9% sirf subscription se aata hai.", "wav": "/tmp/claude-0/-home-user-content-machine-videos/aae3283c-0eb3-5edd-9790-f993781123ae/scratchpad/w/l1.wav"},
+    {"text": "Pehli baat: ek baar bechke bhool gaye, toh har mahine zero se shuru karna padta hai. Repeat income se aapko pehle se pata hota hai ki agle mahine kitna aayega.", "wav": "/tmp/claude-0/-home-user-content-machine-videos/aae3283c-0eb3-5edd-9790-f993781123ae/scratchpad/w/l2.wav"},
+    {"text": "Doosri baat: repeat income har business mein ban sakti hai. Membership, refill ya monthly retainer. Customer ko har mahine kuch chhota sa dena shuru karo.", "wav": "/tmp/claude-0/-home-user-content-machine-videos/aae3283c-0eb3-5edd-9790-f993781123ae/scratchpad/w/l3.wav"},
+    {"text": "Teesri baat: renewal ka reminder aur payment automatic rakho, taaki aapko yaad na rakhna pade. Hustle nahi, system banao. Ye reel save kar lo.", "wav": "/tmp/claude-0/-home-user-content-machine-videos/aae3283c-0eb3-5edd-9790-f993781123ae/scratchpad/w/l4.wav"}
+  ],
+  "scenes": [
+    {"type": "hook", "pills": ["StockGro", "Inc42"], "icon": "trending-up", "headline": "Profit *3.3 guna*, kamaai subscription se"},
+    {"type": "stat", "cue": "uski kamaai", "icon": "wallet", "value": 99.9, "suffix": "%", "label": "kamaai subscription se (Inc42)"},
+    {"type": "big", "cue": "Pehli baat", "icon": "clock", "text": "Ek baar bechke *bhool* gaye?", "sub": "Har mahine zero se shuru"},
+    {"type": "compare", "cue": "Repeat income se", "title": "Sale vs repeat", "left": {"title": "Ek baar ki sale", "items": ["Roz nayi khoj", "Andaza nahi"]}, "right": {"title": "Repeat income", "items": ["Pehle se andaza", "Stable kamaai"]}},
+    {"type": "checklist", "cue": "Doosri baat", "chip": "POINT 2", "icon": "list-checks", "title": "Repeat ke tareeke", "items": ["Membership", "Refill", "Monthly retainer"]},
+    {"type": "flow", "cue": "Teesri baat", "title": "Renewal system", "nodes": [{"icon": "bell", "label": "Reminder"}, {"icon": "indian-rupee", "label": "Payment"}, {"icon": "zap", "label": "Renewal"}], "sub": "Sab automatic"},
+    {"type": "big", "cue": "Hustle nahi", "icon": "moon-star", "text": "Hustle nahi, *system*", "sub": "Repeat income banao"},
+    {"type": "cta", "cue": "save kar", "icon": "bookmark", "text": "Reel *save* karo", "sub": "Amit Patel"}
+  ]
+}
