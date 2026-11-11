@@ -1,0 +1,23 @@
+{
+  "creator": "Amit Patel",
+  "max_seconds": 40,
+  "music": "auto",
+  "lines": [
+    {"text": "October mein India ne UPI pe roz average ek lakh crore rupaye se zyada bheje. Ye pehli baar hua hai. Aur aapka galla abhi bhi sirf cash pe chalta hai?", "wav": "/tmp/claude-0/-home-user-content-machine-videos/e476018b-0024-541c-a764-7f3dc223c5cc/scratchpad/r1114/l1.wav"},
+    {"text": "Pehli baat: har jagah UPI lo. Counter pe QR, bill pe QR, delivery wale ke paas bhi QR. Customer ke paas cash nahi, phone hai.", "wav": "/tmp/claude-0/-home-user-content-machine-videos/e476018b-0024-541c-a764-7f3dc223c5cc/scratchpad/r1114/l2.wav"},
+    {"text": "Doosri baat: business ka UPI alag rakho, ghar aur dukaan ka paisa mat milao. Teesri baat: payment history dekho. Kaunsa din sabse zyada bikta hai, wahi batata hai stock kab badhana hai.", "wav": "/tmp/claude-0/-home-user-content-machine-videos/e476018b-0024-541c-a764-7f3dc223c5cc/scratchpad/r1114/l3.wav"},
+    {"text": "Paisa digital ho gaya, ab system bhi digital banao. Ye reel save karo, aur kisi dukaan wale dost ko bhejo.", "wav": "/tmp/claude-0/-home-user-content-machine-videos/e476018b-0024-541c-a764-7f3dc223c5cc/scratchpad/r1114/l4.wav"}
+  ],
+  "scenes": [
+    {"type": "hook", "pills": ["UPI", "NPCI data"], "icon": "smartphone", "headline": "Roz *1 lakh crore* UPI pe"},
+    {"type": "stat", "cue": "Ye pehli baar", "icon": "indian-rupee", "prefix": "Rs ", "value": 1.01, "suffix": "", "label": "lakh crore roz, average, Oct 2026"},
+    {"type": "phone", "cue": "Pehli baat", "chip": "POINT 1", "icon": "store", "title": "Har jagah QR",
+     "cards": [{"icon": "store", "text": "Counter pe QR", "meta": "har customer"}, {"icon": "list-checks", "text": "Bill pe QR", "meta": "turant payment"}, {"icon": "phone", "text": "Delivery pe QR", "meta": "darwaze pe"}]},
+    {"type": "big", "cue": "Customer ke paas", "icon": "smartphone", "text": "Cash nahi, *phone* hai", "sub": "Customer ki nayi aadat"},
+    {"type": "compare", "cue": "Doosri baat", "title": "POINT 2: Alag UPI", "left": {"title": "Sab mila hua", "items": ["Ghar ka kharcha", "Dukaan ki kamaai"]}, "right": {"title": "Business UPI", "items": ["Alag account", "Saaf hisaab"]}},
+    {"type": "checklist", "cue": "Teesri baat", "chip": "POINT 3", "icon": "chart-line", "title": "Payment history dekho", "items": ["Roz ki payments", "Hafte ka pattern", "Tyohaar ke din"]},
+    {"type": "flow", "cue": "sabse zyada bikta", "title": "Data se faisla", "nodes": [{"icon": "chart-line", "label": "History"}, {"icon": "calendar", "label": "Best din"}, {"icon": "briefcase", "label": "Stock ready"}], "sub": "Andaaze se nahi"},
+    {"type": "big", "cue": "Paisa digital", "icon": "zap", "text": "Ab *system* bhi digital", "sub": "Hustle kam, system zyada"},
+    {"type": "cta", "cue": "Ye reel save", "icon": "bookmark", "text": "*Save* karo, share karo", "sub": "Amit Patel"}
+  ]
+}
