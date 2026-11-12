@@ -1,0 +1,138 @@
+{
+ "creator": "Amit Patel",
+ "max_seconds": 40,
+ "music": "auto",
+ "lines": [
+  {
+   "text": "Phone pe koi bole, aap digital arrest mein ho? Ruko. Supreme Court ne RBI se kaha hai: bank ki laaparwahi se fraud hua, toh bank victim ko kam se kam utna paisa lautaye jitna gaya.",
+   "wav": "/tmp/claude-0/-home-user-content-machine-videos/476f8cb8-8b73-5183-8bf5-4bbd7da9feab/scratchpad/r1115/l1.wav"
+  },
+  {
+   "text": "Par ye abhi RBI ka niyam nahi bana, isliye bachaav aapke haath mein hai. Pehli baat: kanoon mein digital arrest jaisa kuch nahi hota. Video call pe koi police arrest nahi karti.",
+   "wav": "/tmp/claude-0/-home-user-content-machine-videos/476f8cb8-8b73-5183-8bf5-4bbd7da9feab/scratchpad/r1115/l2.wav"
+  },
+  {
+   "text": "Doosri baat: call kaato, aur khud family ya local police se baat karo. Teesri baat: paisa chala gaya, toh turant 1930 pe call karo, aur bank ko bhi batao.",
+   "wav": "/tmp/claude-0/-home-user-content-machine-videos/476f8cb8-8b73-5183-8bf5-4bbd7da9feab/scratchpad/r1115/l3.wav"
+  },
+  {
+   "text": "Ek simple rule banao: ghabrahat mein koi payment nahi. Ye reel save karo, aur ghar ke bado ko bhejo.",
+   "wav": "/tmp/claude-0/-home-user-content-machine-videos/476f8cb8-8b73-5183-8bf5-4bbd7da9feab/scratchpad/r1115/l4.wav"
+  }
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "pills": [
+    "Supreme Court",
+    "RBI"
+   ],
+   "icon": "phone",
+   "headline": "*Digital arrest* call?"
+  },
+  {
+   "type": "approval",
+   "cue": "Supreme Court ne",
+   "icon": "shield-check",
+   "title": "Court ka nirdesh",
+   "question": "Bank ki galti se fraud?",
+   "yes": "Bank lautaye",
+   "no": "Abhi niyam nahi",
+   "done": "RBI ko kaha gaya"
+  },
+  {
+   "type": "big",
+   "cue": "toh bank victim",
+   "icon": "indian-rupee",
+   "text": "Bank *paisa* lautaye",
+   "sub": "Kam se kam jitna gaya"
+  },
+  {
+   "type": "flow",
+   "cue": "Par ye abhi",
+   "title": "Abhi kya status hai",
+   "nodes": [
+    {
+     "icon": "shield-check",
+     "label": "Court"
+    },
+    {
+     "icon": "clock",
+     "label": "RBI niyam"
+    },
+    {
+     "icon": "briefcase",
+     "label": "Bank"
+    }
+   ],
+   "sub": "Niyam abhi baaki hai"
+  },
+  {
+   "type": "compare",
+   "cue": "kanoon mein digital",
+   "title": "POINT 1: Sach jaano",
+   "left": {
+    "title": "Scammer kehta hai",
+    "items": [
+     "Video call arrest",
+     "Abhi paisa bhejo"
+    ]
+   },
+   "right": {
+    "title": "Sach",
+    "items": [
+     "Aisa arrest nahi",
+     "Police aise nahi"
+    ]
+   }
+  },
+  {
+   "type": "phone",
+   "cue": "Doosri baat",
+   "chip": "POINT 2",
+   "icon": "phone",
+   "title": "Call kaato",
+   "cards": [
+    {
+     "icon": "phone",
+     "text": "Call disconnect",
+     "meta": "turant"
+    },
+    {
+     "icon": "users",
+     "text": "Family ko batao",
+     "meta": "akele mat raho"
+    },
+    {
+     "icon": "shield-check",
+     "text": "Local police",
+     "meta": "khud contact karo"
+    }
+   ]
+  },
+  {
+   "type": "big",
+   "cue": "Teesri baat",
+   "icon": "phone",
+   "text": "Turant *1930* pe call",
+   "sub": "National cyber fraud helpline"
+  },
+  {
+   "type": "checklist",
+   "cue": "Ek simple rule",
+   "icon": "list-checks",
+   "title": "Ek simple rule",
+   "items": [
+    "Ghabrahat mein payment nahi",
+    "Pehle family se baat"
+   ]
+  },
+  {
+   "type": "cta",
+   "cue": "Ye reel save",
+   "icon": "bookmark",
+   "text": "*Save* karo, share karo",
+   "sub": "Amit Patel"
+  }
+ ]
+}
