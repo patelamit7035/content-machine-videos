@@ -1,0 +1,140 @@
+{
+ "creator": "Amit Patel",
+ "max_seconds": 40,
+ "music": "auto",
+ "lines": [
+  {
+   "text": "Ek capsule se perfect body? ASCI ne 61 supplement ads check kiye. Jin 60 ka faisla hua, wo saare niyam pe fail nikle.",
+   "wav": "/tmp/claude-0/-home-user-content-machine-videos/0052cc2c-141d-5cbb-925b-e2361a9b13da/scratchpad/r1116/l1.wav"
+  },
+  {
+   "text": "Jinhone sawaal uthaya, unme se koi bhi apna claim saabit nahi kar paya. Har business ke liye isme teen seekh hain.",
+   "wav": "/tmp/claude-0/-home-user-content-machine-videos/0052cc2c-141d-5cbb-925b-e2361a9b13da/scratchpad/r1116/l2.wav"
+  },
+  {
+   "text": "Pehli, wahi promise karo jo saabit kar sako. Doosri, har claim ke saath proof rakho, jaise asli customer ka result. Teesri, ek chhoti checklist banao, jo har ad post hone se pehle check ho.",
+   "wav": "/tmp/claude-0/-home-user-content-machine-videos/0052cc2c-141d-5cbb-925b-e2361a9b13da/scratchpad/r1116/l3.wav"
+  },
+  {
+   "text": "Bharosa promise se nahi, proof se banta hai. Ye reel save karo, aur agla ad banane se pehle ye checklist yaad rakhna.",
+   "wav": "/tmp/claude-0/-home-user-content-machine-videos/0052cc2c-141d-5cbb-925b-e2361a9b13da/scratchpad/r1116/l4.wav"
+  }
+ ],
+ "scenes": [
+  {
+   "type": "hook",
+   "pills": [
+    "ASCI",
+    "Supplement ads"
+   ],
+   "icon": "pill",
+   "headline": "Ek capsule se *perfect body*?"
+  },
+  {
+   "type": "stat",
+   "cue": "Jin 60 ka",
+   "icon": "shield-check",
+   "value": 60,
+   "prefix": "",
+   "suffix": " ads",
+   "label": "Faisla hua, saare niyam pe fail"
+  },
+  {
+   "type": "phone",
+   "cue": "Jinhone sawaal uthaya",
+   "icon": "smartphone",
+   "title": "ASCI review",
+   "cards": [
+    {
+     "icon": "message-circle",
+     "text": "Claim pe sawaal uthaya",
+     "meta": "advertisers ne"
+    },
+    {
+     "icon": "search",
+     "text": "Proof maanga gaya",
+     "meta": "ASCI ne"
+    },
+    {
+     "icon": "circle-x",
+     "text": "Koi saabit nahi kar paya",
+     "meta": "nateeja"
+    }
+   ]
+  },
+  {
+   "type": "flow",
+   "cue": "Har business ke",
+   "title": "Teen seekh",
+   "nodes": [
+    {
+     "icon": "target",
+     "label": "Promise"
+    },
+    {
+     "icon": "file-check",
+     "label": "Proof"
+    },
+    {
+     "icon": "list-checks",
+     "label": "Check"
+    }
+   ],
+   "sub": "Har business ke liye"
+  },
+  {
+   "type": "big",
+   "cue": "Pehli, wahi promise",
+   "chip": "POINT 1",
+   "icon": "target",
+   "text": "Wahi *promise* karo",
+   "sub": "Jo saabit kar sako"
+  },
+  {
+   "type": "compare",
+   "cue": "Doosri, har claim",
+   "chip": "POINT 2",
+   "title": "Claim ke saath proof",
+   "left": {
+    "title": "Sirf claim",
+    "items": [
+     "Perfect body pakka",
+     "Jaadu wala result"
+    ]
+   },
+   "right": {
+    "title": "Claim + proof",
+    "items": [
+     "Asli customer result",
+     "Saaf, seedhi baat"
+    ]
+   }
+  },
+  {
+   "type": "checklist",
+   "cue": "Teesri, ek chhoti",
+   "chip": "POINT 3",
+   "icon": "list-checks",
+   "title": "Ad se pehle check",
+   "items": [
+    "Claim saabit hai?",
+    "Proof saath hai?",
+    "Badha-chadha toh nahi?"
+   ]
+  },
+  {
+   "type": "big",
+   "cue": "Bharosa promise se",
+   "icon": "shield-check",
+   "text": "Bharosa *proof* se",
+   "sub": "Promise se nahi"
+  },
+  {
+   "type": "cta",
+   "cue": "Ye reel save",
+   "icon": "bookmark",
+   "text": "Reel *save* karo",
+   "sub": "Agle ad se pehle dekhna"
+  }
+ ]
+}
