@@ -1,0 +1,22 @@
+{
+ "creator": "Amit Patel",
+ "max_seconds": 40,
+ "music": "auto",
+ "lines": [
+  {"text": "Fast delivery ab customer ki aadat ban chuki hai. Isi aadat pe Indian delivery company Shadowfax ka quarterly profit, ek saal mein paanch guna se zyada ho gaya.", "wav": "/tmp/claude-0/-home-user-content-machine-videos/aa924ba0-3440-5e30-b033-1b0773fd73bd/scratchpad/r1117/l1.wav"},
+  {"text": "July se September mein profit 68 crore rupaye, pichle saal isi samay sirf 13 crore. Har seller ke liye isme teen seekh hain.", "wav": "/tmp/claude-0/-home-user-content-machine-videos/aa924ba0-3440-5e30-b033-1b0773fd73bd/scratchpad/r1117/l2.wav"},
+  {"text": "Pehli, delivery speed ab product ka hissa hai. Doosri, order ka status automatic bhejo, customer ke poochne se pehle. Teesri, pin code ke hisaab se saaf delivery time likho, aur wahi nibhao.", "wav": "/tmp/claude-0/-home-user-content-machine-videos/aa924ba0-3440-5e30-b033-1b0773fd73bd/scratchpad/r1117/l3.wav"},
+  {"text": "Customer sirf product nahi, intezaar bhi kharidta hai. Ye reel save karo, aur aaj apna delivery time check karo.", "wav": "/tmp/claude-0/-home-user-content-machine-videos/aa924ba0-3440-5e30-b033-1b0773fd73bd/scratchpad/r1117/l4.wav"}
+ ],
+ "scenes": [
+  {"type": "hook", "pills": ["Shadowfax", "Fast delivery"], "icon": "truck", "headline": "Speed ab *aadat* hai"},
+  {"type": "big", "cue": "Isi aadat pe", "icon": "trending-up", "text": "Speed se *profit*", "sub": "Shadowfax, Jul-Sep timahi"},
+  {"type": "stat", "cue": "July se September", "icon": "indian-rupee", "value": 68, "prefix": "", "suffix": " Cr", "label": "Profit (Rs), pehle 13 Cr"},
+  {"type": "flow", "cue": "Har seller ke", "title": "Teen seekh", "nodes": [{"icon": "zap", "label": "Speed"}, {"icon": "bell", "label": "Status"}, {"icon": "clock", "label": "Time"}], "sub": "Har seller ke liye"},
+  {"type": "compare", "cue": "Pehli, delivery speed", "chip": "POINT 1", "title": "Delivery ka sach", "left": {"title": "Purani soch", "items": ["Speed sirf extra", "Jab pahunche tab"]}, "right": {"title": "Nayi soch", "items": ["Speed product ka hissa", "Jaldi aur pakka"]}},
+  {"type": "phone", "cue": "Doosri, order ka", "chip": "POINT 2", "icon": "smartphone", "title": "Automatic updates", "cards": [{"icon": "package", "text": "Order pack ho gaya", "meta": "auto message"}, {"icon": "truck", "text": "Order raste mein hai", "meta": "auto message"}, {"icon": "circle-check", "text": "Delivered", "meta": "bina pooche"}]},
+  {"type": "checklist", "cue": "Teesri, pin code", "chip": "POINT 3", "icon": "list-checks", "title": "Delivery time saaf", "items": ["Pin code dekho", "Saaf time likho", "Wahi nibhao"]},
+  {"type": "big", "cue": "Customer sirf product", "icon": "clock", "text": "Intezaar bhi *product* hai", "sub": "Customer ye bhi kharidta hai"},
+  {"type": "cta", "cue": "Ye reel save", "icon": "bookmark", "text": "Reel *save* karo", "sub": "Aaj delivery time check karo"}
+ ]
+}

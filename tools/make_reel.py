@@ -241,6 +241,10 @@ def main():
         icons = json.load(open(os.path.join(HERE, "icons.json")))
         pg.evaluate("([s,i])=>init(s,i)", [page_spec, icons])
         pg.evaluate("document.fonts.ready")
+        # warm up: build the first scene so its web fonts load, then force a rebuild so fit() measures real glyphs
+        pg.evaluate("render(0)")
+        pg.evaluate("document.fonts.ready")
+        pg.evaluate("BUILT=null")
         checks = {}
         for i, sc in enumerate(scenes):
             end = scenes[i + 1]["start"] if i + 1 < len(scenes) else dur
